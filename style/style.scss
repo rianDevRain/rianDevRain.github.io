@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1.8vw;
+    max-height: 100vh;
+    overflow: hidden;
+    background-color: indigo;
+    color: lawngreen;
+}
+.main {
+    margin: auto;
+}
+.grid {
+    
+    width: 66vw;
+    display: grid;
+    grid-template-columns: 100px auto 3em 3em 50px;
+    grid-template-rows: auto auto 1fr auto 1fr;
+    gap: 1rem;
+    height: 100vh;
+    transform: rotate(-27deg);
+    margin-left: 10vw;
+    margin-top: 2vh;
+    &__item1 {
+        grid-column: 2 / 3;
+        font-size: 2em;
+        color: lawngreen;
+    }
+    &__item2 {
+        font-size: 1.6em;
+        writing-mode: vertical-lr;
+        grid-row: 2 / 6;
+        grid-column: 4 / 5;
+        
+        
+        align-self: end;
+        justify-self: center;
+        padding: .25em;
+    }
+    &__item3 {
+        grid-row: 1 / 5;
+        grid-column: 1 / 2;
+        background: url(../img/codeTall.jpg) no-repeat center / cover;
+        
+    }
+    &__item4 {
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+        writing-mode: vertical-rl;
+        font-size: 1.7em;
+    }
+    &__item5 {
+        font-size: 1.6em;
+        grid-column: 3 /4;
+        grid-row: 3 /4;
+        writing-mode: vertical-rl;
+    }
+    &__item6 {
+        font-size: 1.6em;
+        grid-column: 3 /4;
+        grid-row: 4 /5;
+        writing-mode: vertical-rl;
+    }
+    &__item7 {
+        background: url(../img/code1.jpg) no-repeat center / cover;
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+    }
+    &__item8 {
+        background: url(../img/keyboard.jpg) center / cover;
+        grid-column: 2 / 3;
+        grid-row: 4 / 6;
+    }
+    // &__item9 {
+    //     background: url(../img/);
+    // }
+
+
+    .list {
+        list-style: none;
+        color: red;
+        
+
+        &__item1 {
+            color: indigo;
+        }
+    }
+}
+@media only screen and (max-width: 950px) {
+    .grid {
+        width: 90vw;
+        margin: auto;
+        grid-template-columns: auto auto 2em 2em;
+        grid-template-rows: auto auto 1fr 1fr;
+        transform: rotate(-12deg);
+        margin-top: 20px;
+        &__item1 {
+            grid-column: 1 /2;
+            align-self: end;
+            justify-self: end;
+        }
+        &__item2 {
+            // writing-mode: initial;
+            grid-column: 4 / 5;
+            grid-row: 1 / 5;
+            font-size: 2em;
+            align-self: center;
+        }
+        &__item3 {
+            grid-row: 4 / 5;
+            grid-column: 2 / 3;
+            max-width: 200px;
+            max-height: 25vh ;
+        }
+        &__item8 {
+            grid-row: 2 /3;
+            grid-column: 4 /5;
+        }
+        &__item4 {
+            justify-self: center;
+            align-self: center;
+            grid-column: 3 /4;
+        }
+        &__item7 {
+            grid-column: 1 /2;
+            grid-row: 5 /6;
+        }
+        &__item8 {
+            grid-column: 1 /2;
+            grid-row: 6 /7;
+        }
+        &__item5 {
+            justify-self: center;
+        }
+        &__item6 {
+            justify-self: center ;
+            grid-row: 1 /2;
+            grid-column: 3 /4;
+        }
+    }
+}
+@media only screen and (max-width: 750px) {
+    
+    html {
+        max-height: 100vh;
+    }
+    .grid {
+        grid-template-columns: 1fr 50px;
+        grid-template-rows: 4rem 4rem 4rem 4rem auto auto auto;
+        transform: rotate(0);
+        font-size: 2rem;
+        &__item1 {
+            grid-column: 1/ 2;
+            grid-row: 1 /2;
+            justify-self: center;
+        }
+        &__item2 {
+            writing-mode: vertical-lr;
+            grid-column: 2 / 3;
+            grid-row: 1 / 7;
+            font-size: 3rem;
+        }
+        &__item8 {
+            grid-row: 2 /3;
+            grid-column: 1 /2;
+        }
+        &__item4 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            writing-mode: initial;
+        }
+        &__item5 {
+            writing-mode: initial;
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            align-self: center;
+        }
+        &__item6 {
+            writing-mode: initial;
+            grid-column: 1 /2;
+            grid-row: 4 /5;
+            align-self: center;
+        }
+        &__item8 {
+            grid-row: 6 / 7;
+            grid-column: 1 / 2;
+            max-height: 25vh;
+        }
+        &__item3 {
+            display: none;
+        }
+        &__item7 {
+            grid-column: 1 /2;
+            grid-row: 7 /8
+        }
+        
+    }    
+}
