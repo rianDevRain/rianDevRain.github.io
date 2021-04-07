@@ -1,0 +1,3 @@
+384px 198px
+
+style="width:384px;height:128px;"

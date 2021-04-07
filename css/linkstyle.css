@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scrollbar-color: blue skyblue;
+
+  /* display: block; */
+}
+body {
+  font-family: monospace;
+  font-weight: bold;
+  background: rgb(7, 24, 59);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar Navbar Navbar */
+/* Navbar Navbar Navbar */
+/* Navbar Navbar Navbar */
+/* Navbar Navbar Navbar */
+/* Navbar Navbar Navbar */
+#navbar {
+  display: flex;
+  background: rgb(7, 24, 59);
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.75rem;
+  color: lightblue;
+}
+
+#navbar:hover {
+  background: black;
+}
+#navbar h1 span a {
+  color: hotpink;
+}
+#navbar h1 span i {
+  color: pink;
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 1px 3px;
+  color: pink;
+}
+
+#navbar ul li a {
+  padding: 0.5rem 0.25rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 1em;
+  color: lightblue;
+}
+
+#navbar ul li a:hover {
+  background-color: black;
+  color: skyblue;
+  font-weight: bold;
+}
+/* body */
+/* body */
+/* body */
+/* body */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 500px));
+}
+.links {
+  display: grid;
+  padding: 2rem;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #7037f5;
+}
+
+a:visited {
+  color: lightblue;
+}
+.button {
+  align-self: center;
+}
+
+/* Main Site Main Site  Main Site*/
+/* Main Site Main Site  Main Site*/
+/* Main Site Main Site  Main Site*/
+/* Main Site Main Site  Main Site */
+
+.button {
+  background-color: aqua;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* @media screen and (max-width: 1400px ) {
+  header{
+    grid-template-columns: 1fr ;
+    /* grid-column-start: 1; */
+
+/* }
+  .links:nth-child(odd) {
+    grid-column-start: 1;
+  }
+
+  .links:nth-child(even) {
+    grid-column-start: 1;
+  }
+}   */
+
+/* ScrollBar */
+/* ScrollBar */
+/* ScrollBar */
+/* ScrollBar */
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  background: skyblue;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: blue;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkblue;
+}
