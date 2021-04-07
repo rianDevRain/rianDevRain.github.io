@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 :root{
-    --primary: #7900cf;
-    --dark: #f70067;
-    --light: #78fd1f;
+    --light: #E0005A;
+    --dark: #81EB00;
+    --primary: #071C70;
+    --background: #FFB300;
 }
 *{
     box-sizing: border-box;
@@ -40,14 +41,14 @@ p{
 }
 .bg-light{
     background: var(--primary);
-    color: wheat;
+    color: var(--background);  
 }
 .bg-dark{
-    background: wheat;
+    background: var(--background);
     color: var(--primary);
 }
 .bg-primary{
-    background: wheat;
+    background: var(--background);
     color: var(--primary);
 }
 .l-heading{
@@ -155,10 +156,17 @@ p{
     padding: 0 2rem;
 }
 /* what we do=================================what we do */
+/* .circles {
+    display: none;
+} */
 #what .items{
     display: flex;
     /* padding: 1rem 1rem; */
     background: var(--light);
+}
+#what .main-text{
+    font-size: 2rem;
+    font-weight: bold;
 }
 #what .items .item{
     flex: 1;
